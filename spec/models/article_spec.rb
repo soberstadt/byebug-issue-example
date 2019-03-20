@@ -1,10 +1,10 @@
 require 'rails_helper'
 
-RSpec.describe Article, type: :model do
+RSpec.describe Article do
   it 'loads Article' do
-    binding.pry
-    # run `next` and expect to advance to line 8
-    p Article.exists?
+    byebug
+    # run `next` and expect to advance to line 7
+    Article.new
     p 'what?'
   end
 end
